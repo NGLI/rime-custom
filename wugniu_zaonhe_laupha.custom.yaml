@@ -6,7 +6,7 @@
 # author:
 #   - Electric Sheep <shinzoqchiuq@outlook.com>
 #
-# https://ngli.github.io/rime-wugniu/%E4%BD%BF%E7%94%A8/%E6%A8%A1%E7%B3%8A%E9%9F%B3.html
+# https://ngli.github.io/%E4%BD%BF%E7%94%A8/%E6%A8%A1%E7%B3%8A%E9%9F%B3.html
 #
 # 使用方法：
 # 需要開啓（關閉）哪組模糊音，就在行首刪去（加上） # 號。
@@ -57,3 +57,22 @@ patch:
     - derive/yi|y(?=[aeou])/ghi/
     # 容錯 w => ghu
     - derive/wu|w(?=[aeo])/ghu/
+
+
+  # 輸入提示設置
+  "translator/comment_format":
+    # 顯示吳語協會式拼音
+    #- xform/q/h/
+    #- xform/([gk])ni(?=[nqh]|\d|$)/nyi/
+    #- xform/([gk])ni(?=[aoue])/ny/
+    #- xform/er/r/
+
+
+  # 反查標註設置
+  "reverse_lookup/comment_format":
+    # 顯示吳語協會式拼音
+    #- xform/q/h/
+    #- xform/([gk])ni(?=[nqh]|\d|$)/nyi/
+    #- xform/([gk])ni(?=[aoue])/ny/
+    #- xform/er/r/
+
