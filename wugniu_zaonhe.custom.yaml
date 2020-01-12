@@ -39,14 +39,30 @@ patch:
     - derive/gni(?=[aoue])/ny/
     - derive/er/r/
 
-    ## 模糊前後an
-    #- derive/aon/an/
+    # 干官不分
+    - derive/uoe/oe/
+    # 余圓不分
+    - derive/(?<=[iy])oe$/u/
+    # 打黨不分
+    - derive/aon/an/
+    # 格割不分
+    - derive/e(?=q|h)/a/
+    - derive/(?<!i)a(?=q|h)/e/
+    # 約一不分
+    - derive/ia(?=q|h)/i/
+    - derive/ya(?=q|h)/yi/
+    - derive/i(?=q|h)/ia/
+    - derive/yi(?=q|h)/ya/
+    ## 下戶不分
+    #- derive/o$/u/
 
     # 聲母簡拼
     - abbrev/^([a-z]).+$/$1/
     - abbrev/^([pmtnlszckg]h|gn|ng|tsh?|dz).+$/$1/
     # 容錯 au => ao
     - derive/au/ao/
+    ## 容錯 eu => ou
+    #- derive/eu/ou/
     # 容錯 gn => n （無gni ni對立）
     - derive/gni/ni/
     # c組聲母後自動加i
@@ -57,11 +73,10 @@ patch:
     - derive/oe/eo/
     # 容錯 ao => oa
     - derive/ao/oa/
-    # 容錯 y => ghi
+    # 容錯 y- => ghi-
     - derive/yi|y(?=[aeou])/ghi/
-    # 容錯 w => ghu
+    # 容錯 w- => ghu-
     - derive/wu|w(?=[aeo])/ghu/
-
 
   # 輸入提示設置
   "translator/comment_format":

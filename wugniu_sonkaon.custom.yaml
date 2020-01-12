@@ -39,24 +39,38 @@ patch:
     - derive/gni(?=[aoue])/ny/
     - derive/er/r/
 
+    # 尖團不分
+    - derive/ts(h?)i/c$1i/
+    - derive/^(s|z)i/$1hi/
+    # 割鴿不分
+    - derive/oe(?=q|h)/e/
+    # 革鴿不分
+    - derive/eo(?=q|h)/e/
+    # 力立不分
+    - derive/ie(?=q|h)/i/
+    - derive/ye(?=q|h)/yi/
+    # 握屋不分
+    - derive/u?ao(?=q|h)/o/
+    - derive/iao(?=q|h)/io/
+
     # 聲母簡拼
     - abbrev/^([a-z]).+$/$1/
     - abbrev/^([pmtnlszckg]h|gn|ng|tsh?|dz).+$/$1/
     # 容錯 au => ao
     - derive/au/ao/
+    ## 容錯 eu => ou
+    #- derive/eu/ou/
     # c組聲母後自動加i
     - derive/^(c|j|gn|[csz]h)i(?=[aoue])/$1/
     # 容錯 介音、主元音順序調換
     - derive/^(.+)([iu])([aeou])([euonqh])$/$1$3$2$4/
-    # 容錯 oe => eo
-    - derive/oe/eo/
     # 容錯 ao => oa
     - derive/ao/oa/
     # 容錯 ae => ea
     - derive/ae/ea/
-    # 容錯 y => ghi
+    # 容錯 y- => ghi-
     - derive/yi|y(?=[aeou])/ghi/
-    # 容錯 w => ghu
+    # 容錯 w- => ghu-
     - derive/wu|w(?=[aeo])/ghu/
 
 
