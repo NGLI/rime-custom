@@ -26,13 +26,12 @@ patch:
   # 模糊音設置 容錯設置
   "speller/algebra":
     - xform/^([bcdfghjklpqstvwxyz])$/$1_/
-    # 以下兩行不要改動
-    - xform/\d//
+    # 還原城區音系
     - xlit/AEIOUWNDZ/aeiouwndz/
 
-    ## 研 又讀 黏
+    # 研 又讀 黏
     - derive/Gn/kn/
-    - xform/Gn/gn/ # 此行不要改動
+    - xform/Gn/gn/
     # io韻消失
     - erase/(^|c|j|gn|kn|[csz]h)(y|i)o$/
 
@@ -141,15 +140,16 @@ patch:
 
   # 輸入提示設置
   "translator/comment_format":
-    - xlit/AEIOWN/aeiown/ # 此行不要改動
+    # 還原城區音系
+    - xlit/AEIOUWGNDZ/aeiouwgndz/
+    - xform/(\b|c|j|gn|kn|[csz]h)(y|i)o\b//
 
     # 顯示吳語協會式拼音
     #- xform/q/h/
-    #- xform/(?<=[yi])o(?=\d|\b)/uo/
     #- xform/(i|y)au/$1o/
     #- xform/([mnl])h/$1/
     #- xform/nk/ng/
-    #- xform/([gk])ni(?=[nqh]|\d|$)/nyi/
+    #- xform/([gk])ni(?=[nqh]|\d|\b)/nyi/
     #- xform/([gk])ni(?=[aoue])/ny/
     #- xform/(?<=[szh])yu(?=[nqh])/oe/
     #- xform/er/r/
@@ -157,15 +157,16 @@ patch:
 
   # 反查標註設置
   "reverse_lookup/comment_format":
-    - xlit/AEIOWN/aeiown/ # 此行不要改動
+    # 還原城區音系
+    - xlit/AEIOUWGNDZ/aeiouwgndz/
+    - xform/(\b|c|j|gn|kn|[csz]h)(y|i)o\b//
 
     # 顯示吳語協會式拼音
     #- xform/q/h/
-    #- xform/(?<=[yi])o(?=\d|\b)/uo/
     #- xform/(i|y)au/$1o/
     #- xform/([mnl])h/$1/
     #- xform/nk/ng/
-    #- xform/([gk])ni(?=[nqh]|\d|$)/nyi/
+    #- xform/([gk])ni(?=[nqh]|\d|\b)/nyi/
     #- xform/([gk])ni(?=[aoue])/ny/
     #- xform/(?<=[szh])yu(?=[nqh])/oe/
     #- xform/er/r/

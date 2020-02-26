@@ -65,7 +65,7 @@ patch:
   "translator/comment_format":
     # 顯示吳語協會式拼音
     #- xform/q/h/
-    #- xform/([gk])ni(?=[nqh]|\d|$)/nyi/
+    #- xform/([gk])ni(?=[nqh]|\d|\b)/nyi/
     #- xform/([gk])ni(?=[aoue])/ny/
     #- xform/er/r/
 
@@ -74,7 +74,7 @@ patch:
   "reverse_lookup/comment_format":
     # 顯示吳語協會式拼音
     #- xform/q/h/
-    #- xform/([gk])ni(?=[nqh]|\d|$)/nyi/
+    #- xform/([gk])ni(?=[nqh]|\d|\b)/nyi/
     #- xform/([gk])ni(?=[aoue])/ny/
     #- xform/er/r/
 

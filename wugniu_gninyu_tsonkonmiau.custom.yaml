@@ -26,7 +26,7 @@ patch:
   # 模糊音設置 容錯設置
   "speller/algebra":
     - xform/^([bcdfghjklpqstvwxyz])$/$1_/
-    # 以下十九行不要改動
+    # 生成鍾公廟音系
     - xform/WU|NU/ngu/
     - xform/nEI/nae/
     - xform/EI|AE/e/
@@ -42,18 +42,17 @@ patch:
     - xform/wo/gho/
     - derive/tshOE/chieu/
     - derive/dzOE/jieu/
-    - xform/(?<=tsh|dz)OE/oe/
+    - xform/(tsh|dz)OE/$1oe/
     - xform/DZOE/jieu/
     - xform/ZOE/zhieu/
     - erase/(^|c|j|gn|kn|[csz]h)(y|i)o$/
-    # 以上十九行不要改動
 
-    # 轉爲吳語協會式拼音
+    ## 轉爲吳語協會式拼音
     #- xform/q/h/
     #- xform/(i|y)au/$1o/
     #- xform/([mnl])h/$1/
     #- xform/nk/ng/
-    #- xform/([gk])ni(?=[nqh]|\d|$)/nyi/
+    #- xform/([gk])ni(?=[nqh]|\d|\b)/nyi/
     #- xform/([gk])ni(?=[aoue])/ny/
     #- xform/(?<=[szh])yu(?=[nqh])/oe/
     #- xform/er/r/
@@ -143,7 +142,7 @@ patch:
 
   # 輸入提示設置
   "translator/comment_format":
-    # 以下十九行不要改動
+    # 生成鍾公廟音系
     - xform/WU|NU/ngu/
     - xform/nEI/nae/
     - xform/EI|AE/e/
@@ -152,25 +151,21 @@ patch:
     - xform/W/v/
     - xform/Gn/kn/
     - xform/N/w/
-    - xform/(^y|i)u(?=n)/$1o/
-    - derive/([pb]|ph)un/$1oe/
-    - xform/mun/moe/
+    - xform/(\by|i)u(?=n)/$1o/
+    - xform/([pbm]|ph)un/$1oe/
     - xform/uo/o/
     - xform/wo/gho/
-    - derive/tshOE/chieu/
-    - derive/dzOE/jieu/
-    - xform/(?<=tsh|dz)OE/oe/
-    - xform/DZOE/jieu/
-    - xform/ZOE/zhieu/
-    - erase/(^|c|j|gn|kn|[csz]h)(y|i)o$/
-    # 以上十九行不要改動
+    - xform/OE/oe/
+    - xform/DZoe/jieu/
+    - xform/Zoe/zhieu/
+    - xform/(\b|c|j|gn|kn|[csz]h)(y|i)o\b//
 
     # 顯示吳語協會式拼音
     #- xform/q/h/
     #- xform/(i|y)au/$1o/
     #- xform/([mnl])h/$1/
     #- xform/nk/ng/
-    #- xform/([gk])ni(?=[nqh]|\d|$)/nyi/
+    #- xform/([gk])ni(?=[nqh]|\d|\b)/nyi/
     #- xform/([gk])ni(?=[aoue])/ny/
     #- xform/(?<=[szh])yu(?=[nqh])/oe/
     #- xform/er/r/
@@ -178,7 +173,7 @@ patch:
 
   # 反查標註設置
   "reverse_lookup/comment_format":
-    # 以下十九行不要改動
+    # 生成鍾公廟音系
     - xform/WU|NU/ngu/
     - xform/nEI/nae/
     - xform/EI|AE/e/
@@ -187,25 +182,21 @@ patch:
     - xform/W/v/
     - xform/Gn/kn/
     - xform/N/w/
-    - xform/(^y|i)u(?=n)/$1o/
-    - derive/([pb]|ph)un/$1oe/
-    - xform/mun/moe/
+    - xform/(\by|i)u(?=n)/$1o/
+    - xform/([pbm]|ph)un/$1oe/
     - xform/uo/o/
     - xform/wo/gho/
-    - derive/tshOE/chieu/
-    - derive/dzOE/jieu/
-    - xform/(?<=tsh|dz)OE/oe/
-    - xform/DZOE/jieu/
-    - xform/ZOE/zhieu/
-    - erase/(^|c|j|gn|kn|[csz]h)(y|i)o$/
-    # 以上十九行不要改動
+    - xform/OE/oe/
+    - xform/DZoe/jieu/
+    - xform/Zoe/zhieu/
+    - xform/(\b|c|j|gn|kn|[csz]h)(y|i)o\b//
 
     # 顯示吳語協會式拼音
     #- xform/q/h/
     #- xform/(i|y)au/$1o/
     #- xform/([mnl])h/$1/
     #- xform/nk/ng/
-    #- xform/([gk])ni(?=[nqh]|\d|$)/nyi/
+    #- xform/([gk])ni(?=[nqh]|\d|\b)/nyi/
     #- xform/([gk])ni(?=[aoue])/ny/
     #- xform/(?<=[szh])yu(?=[nqh])/oe/
     #- xform/er/r/
