@@ -11,8 +11,8 @@
 - `wugniu_haeye.custom.yaml`：海鹽
 - `wugniu_kashin.custom.yaml`：嘉興
 - `wugniu_kazoe.custom.yaml`：嘉善
-- `wugniu_gninpou.custom.yaml`：寧波城區
-- `wugniu_gninyu_tsonkonmiau.custom.yaml`：鄞縣（鍾公廟）
+- `wugniu_gninpou.custom.yaml`：寧波
+- `wugniu_gnincieu.custom.yaml`：鄞州
 
 [使用方法](https://ngli.github.io/使用/模糊音.html)
 
