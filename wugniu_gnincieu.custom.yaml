@@ -1,7 +1,7 @@
-# wugniu_gninyu_tsonkonmiau.custom.yaml
+# wugniu_gnincieu.custom.yaml
 # encoding: utf-8
 #
-# 吳語（鄞縣鍾公廟）輸入法模糊音定製模板
+# 吳語（鄞州）輸入法模糊音定製模板
 #
 # author:
 #   - Electric Sheep <shinzoqchiuq@outlook.com>
@@ -26,7 +26,7 @@ patch:
   # 模糊音設置 容錯設置
   "speller/algebra":
     - xform/^([bcdfghjklpqstvwxyz])$/$1_/
-    # 生成鍾公廟音系
+    # 生成鄞州音系
     - xform/WU|NU/ngu/
     - xform/nEI/nae/
     - xform/EI|AE/e/
@@ -142,7 +142,7 @@ patch:
 
   # 輸入提示設置
   "translator/comment_format":
-    # 生成鍾公廟音系
+    # 生成鄞州音系
     - xform/WU|NU/ngu/
     - xform/nEI/nae/
     - xform/EI|AE/e/
@@ -173,7 +173,7 @@ patch:
 
   # 反查標註設置
   "reverse_lookup/comment_format":
-    # 生成鍾公廟音系
+    # 生成鄞州音系
     - xform/WU|NU/ngu/
     - xform/nEI/nae/
     - xform/EI|AE/e/
