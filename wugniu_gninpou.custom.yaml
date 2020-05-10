@@ -61,6 +61,8 @@ patch:
     #- derive/zhi(?=[nqh]|$)/yi/
     ## 胡符不分
     #- derive/wu$/vu/
+    ## 饅姆不分
+    #- derive/mun/m/
     ## 亂漏不分
     - derive/loe/leu/
 
@@ -95,6 +97,8 @@ patch:
 
     # 新新派
 
+    ## 歡夫不分
+    #- derive/hun/fu/
     ## 江高不分
     #- derive/aon/au/
     ## 朋排不分
