@@ -33,7 +33,6 @@ patch:
     - xform/nE/gnie/
     - xform/I/e/
     - xform/W/v/
-    - xform/Gn/kn/
     - xform/N/w/
     - xform/(^y|i)u(?=n)/$1o/
     - derive/([pb]|ph)un/$1oe/
@@ -120,7 +119,7 @@ patch:
     - derive/(gn|ny)i/ni/
     - derive/kni/nhi/
     - derive/ny(?=[aoue])/ni/
-    # 聲母簡拼
+    # 簡拼
     - abbrev/^([a-z]).+$/$1/
     - abbrev/^([pmtnlszckg]h|[kg]n|n[kg]|tsh?|dz).+$/$1/
     # 容錯 un => oe
@@ -153,7 +152,6 @@ patch:
     - xform/nE/gnie/
     - xform/I/e/
     - xform/W/v/
-    - xform/Gn/kn/
     - xform/N/w/
     - xform/(\by|i)u(?=n)/$1o/
     - xform/([pbm]|ph)un/$1oe/
@@ -184,7 +182,6 @@ patch:
     - xform/nE/gnie/
     - xform/I/e/
     - xform/W/v/
-    - xform/Gn/kn/
     - xform/N/w/
     - xform/(\by|i)u(?=n)/$1o/
     - xform/([pbm]|ph)un/$1oe/

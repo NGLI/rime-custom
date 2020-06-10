@@ -29,9 +29,6 @@ patch:
     # 還原城區音系
     - xlit/AEIOUWNDZ/aeiouwndz/
 
-    # 研 又讀 黏
-    - derive/Gn/kn/
-    - xform/Gn/gn/
     # io韻消失
     - erase/(^|c|j|gn|kn|[csz]h)(y|i)o$/
 
@@ -68,14 +65,14 @@ patch:
 
     # 新派
 
-    # 且采不分 茄財不分 械害不分
+    # 且采不分
     - derive/c(h)?ie$/ts$1e/
     - derive/jie$/dze/
     - derive/(?<=[sz])hie$/e/
     - derive/^ye$/ghe/
     # 降壯不分
     - derive/ciaon/tsaon/
-    # 專究不分 穿秋不分
+    # 穿秋不分
     - derive/ts(h)?oe$/c$1ieu/
     - derive/dzoe$/jieu/
     - derive/^(s|z)oe$/$1hieu/
@@ -84,7 +81,7 @@ patch:
     # 話夏不分
     - derive/wo/gho/
     - derive/^(h)?uo/$1o/
-    # 半布不分 官孤不分
+    # 官孤不分
     - derive/(?<![iy])un/u/
     # 春沖不分 出促不分
     - derive/(?<=[szh])(yu|oe)(?=[nqh])/o/
@@ -118,7 +115,7 @@ patch:
     - derive/(gn|ny)i/ni/
     - derive/kni/nhi/
     - derive/ny(?=[aoue])/ni/
-    # 聲母簡拼
+    # 簡拼
     - abbrev/^([a-z]).+$/$1/
     - abbrev/^([pmtnlszckg]h|[kg]n|n[kg]|tsh?|dz).+$/$1/
     # 容錯 un => oe
@@ -145,7 +142,7 @@ patch:
   # 輸入提示設置
   "translator/comment_format":
     # 還原城區音系
-    - xlit/AEIOUWGNDZ/aeiouwgndz/
+    - xlit/AEIOUWNDZ/aeiouwndz/
     - xform/(\b|c|j|gn|kn|[csz]h)(y|i)o\b//
 
     # 顯示吳語協會式拼音
@@ -162,7 +159,7 @@ patch:
   # 反查標註設置
   "reverse_lookup/comment_format":
     # 還原城區音系
-    - xlit/AEIOUWGNDZ/aeiouwgndz/
+    - xlit/AEIOUWNDZ/aeiouwndz/
     - xform/(\b|c|j|gn|kn|[csz]h)(y|i)o\b//
 
     # 顯示吳語協會式拼音
