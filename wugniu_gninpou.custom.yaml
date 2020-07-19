@@ -56,11 +56,11 @@ patch:
     ## 謝夜不分
     #- derive/zhi(?=[aoue])/y/
     #- derive/zhi(?=[nqh]|$)/yi/
-    ## 胡符不分
-    #- derive/wu$/vu/
+    # 胡符不分
+    - derive/wu$/vu/
     ## 饅姆不分
     #- derive/mun/m/
-    ## 亂漏不分
+    # 亂漏不分
     - derive/loe/leu/
 
     # 新派
