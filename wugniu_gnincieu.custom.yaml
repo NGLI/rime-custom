@@ -71,6 +71,7 @@ patch:
     #- derive/zhi(?=[nqh]|$)/yi/
     # 胡符不分
     - derive/wu$/vu/
+    - derive/vu$/wu/
     ## 饅姆不分
     #- derive/mun/m/
     # 亂漏不分
