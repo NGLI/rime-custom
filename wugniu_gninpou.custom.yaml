@@ -27,7 +27,7 @@ patch:
   "speller/algebra":
     - xform/^([bcdfghjklpqstvwxyz])$/$1_/
     # 還原城區音系
-    - xlit/AEIOUWNDZ/aeiouwndz/
+    - xform/(\w*)-(\w*)/$1/
 
     # io韻消失
     - erase/(^|c|j|gn|kn|[csz]h)(y|i)o$/
@@ -143,7 +143,7 @@ patch:
   # 輸入提示設置
   "translator/comment_format":
     # 還原城區音系
-    - xlit/AEIOUWNDZ/aeiouwndz/
+    - xform/(\w*)-(\w*)/$1/
     - xform/(\b|c|j|gn|kn|[csz]h)(y|i)o\b//
 
     # 顯示吳語協會式拼音
@@ -160,7 +160,7 @@ patch:
   # 反查標註設置
   "reverse_lookup/comment_format":
     # 還原城區音系
-    - xlit/AEIOUWNDZ/aeiouwndz/
+    - xform/(\w*)-(\w*)/$1/
     - xform/(\b|c|j|gn|kn|[csz]h)(y|i)o\b//
 
     # 顯示吳語協會式拼音
