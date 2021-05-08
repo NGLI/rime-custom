@@ -132,10 +132,10 @@ patch:
     - derive/ao/oa/
     # 容錯 ae => ea
     - derive/ae/ea/
-    # 容錯 y- => ghi-
-    - derive/yi|y(?=[aeou])/ghi/
-    # 容錯 w- => ghu-
-    - derive/wu|w(?=[aeo])/ghu/
+    ## 容錯 y- => ghi-
+    #- derive/yi|y(?=[aeou])/ghi/
+    ## 容錯 w- => ghu-
+    #- derive/wu|w(?=[aeo])/ghu/
 
 
   # 輸入提示設置
