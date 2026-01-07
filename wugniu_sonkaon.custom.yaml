@@ -90,3 +90,7 @@ patch:
     #- xform/([gk])ni(?=[nqh]|\d|\b)/nyi/
     #- xform/([gk])ni(?=[aoue])/ny/
     #- xform/er/r/
+
+
+  # 反查詞典設置
+  #"luna_pinyin/dictionary": luna_pinyin.extended

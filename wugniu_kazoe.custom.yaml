@@ -93,3 +93,7 @@ patch:
 
     ## 聲調上標
     #- xlit/12345678/¹²³⁴⁵⁶⁷⁸/
+
+
+  # 反查詞典設置
+  #"luna_pinyin/dictionary": luna_pinyin.extended
